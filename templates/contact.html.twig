@@ -37,15 +37,18 @@
 
         </div>
         <div id="navbar" class="collapse navbar-collapse">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
             <ul class="nav navbar-nav">
                 {#                <li class="active"><a href="#">product</a></li>#}
-                <li><a href="{{ path('product_create') }}">Add Product</a></li>
+                <li class="sr-only"><a href="{{ path('product_create') }}">Add Product</a></li>
                 <li><a href="{{ path('app_login') }}">Login</a></li>
                 <li><a href="{{ path('app_register') }}">Register</a></li>
                 <li><a href="{{ path('product_list') }}">Product</a></li>
                 <li><a href="{{ path('app_contact') }}">CONTACT</a></li>
 
             </ul>
+            </button>
         </div><!--/.nav-collapse -->
     </div>
 </nav>
